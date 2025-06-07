@@ -26,14 +26,14 @@ public class ItemVenda extends Produto {
 
     
     public double getTotal() {
-        return getPreco() * quantidadeVendida;
+        return getPrecoRS() * quantidadeVendida;
     }
 
     @Override
     public String toString() {
         return "ItemVenda{" +
-               "produto=" + getNome() +  
-               ", quantidadeVendida=" + quantidadeVendida + 
-               ", total=" + getTotal() + '}';
+               "produto:" + getNome() +  
+               ", quantidadeVendida:" + quantidadeVendida + 
+               ", total:" + getTotal() + '}';
     }
 }
