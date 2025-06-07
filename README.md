@@ -21,14 +21,14 @@ Contém os testes unitários que verificam o comportamento dos principais compon
 - Conxeão com banco de dados utilizando MySQL
 
 
-  # 🧱 Arquitetura
+  #  🧱 Arquitetura
 A arquitetura adotada segue os princípios básicos de separação de responsabilidades:
 Entidades – Representam os objetos de domínio do sistema (ex: Produto, Usuario, Venda)
 Lógica de negócios – Métodos encapsulados dentro das próprias entidades ou classes auxiliares
 Tratamento de exceções – Customização de erros para melhorar a clareza do fluxo e depuração
 Testes – Verificações do comportamento esperado dos componentes, cobrindo cenários positivos e negativos
 
-#🔧 Escolhas técnicas
+# 🔧 Escolhas técnicas
 🧭 Modularização por responsabilidade
 Organizar o projeto em pacotes separados para entidades e exceções favorece a manutenção e leitura do código.
 ❗ Exceções customizadas
@@ -36,7 +36,7 @@ Foram criadas classes específicas para capturar erros como CPF inválido, falta
 ✅ Testabilidade
 O projeto inclui testes automatizados escritos com JUnit, cobrindo casos de uso importantes como operações de venda, manipulação de estoque e registro de usuários.
 
-#🚀 Instruções para executar o projeto
+# 🚀 Instruções para executar o projeto
 Para rodar o projeto localmente, siga os passos abaixo:
 
 1.Clone o repositório:
@@ -45,7 +45,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 4.Rode os testes (opcional):
 5.Execute a classe ItemVendaTestes.java que está no diretório test.
 
-#🤝 Contribuições
+# 🤝 Contribuições
 Este projeto foi desenvolvido para fins de avaliação técnica e não está aceitando contribuições externas neste momento.
 
 ------------------------------
@@ -72,7 +72,7 @@ JUnit for unit testing
 Object-oriented design structure
 Database connection using MySQL
 
-# 🧱 Architecture
+#  🧱 Architecture
 The adopted architecture follows basic principles of responsibility separation:
 
 Entities – Represent the domain objects of the system (e.g., Product, User, Sale)
@@ -83,7 +83,7 @@ Exception handling – Custom error classes to improve flow clarity and debuggin
 
 Testing – Verifications of expected component behavior, covering both positive and negative scenarios
 
-#🔧 Technical Choices
+# 🔧 Technical Choices
 🧭 Responsibility-based modularization
 The project is organized into separate packages for entities and exceptions, which improves code readability and maintainability.
 ❗ Custom exceptions
