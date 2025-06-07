@@ -2,12 +2,12 @@ package lojatgid;
 
 public class Produto {
     private String nome;
-    private double preco;
+    private double precoRS;
     private int quantidade;
 
-    public Produto(String nome, double preco, int quantidade) {
+    public Produto(String nome, double precoRS, int quantidade) {
         this.nome = nome;
-        this.preco = preco;
+        this.precoRS = precoRS;
         this.quantidade = quantidade;
     }
 
@@ -15,8 +15,8 @@ public class Produto {
         return nome;
     }
 
-    public double getPreco() {
-        return preco;
+    public double getPrecoRS() {
+        return precoRS;
     }
 
     public int getQuantidade() {
@@ -33,6 +33,6 @@ public class Produto {
 
     @Override
     public String toString() {
-        return "Produto:" + "nome='" + nome + '\'' + ", preco=" + preco + ", quantidade=" + quantidade + '}';
+        return "Produto:" + "nome:'" + nome + '\'' + ", preco R$" + precoRS + ", quantidade=" + quantidade + '}';
     }
 }
