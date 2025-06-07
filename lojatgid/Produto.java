@@ -1,18 +1,18 @@
 package lojatgid;
 
 public class Produto {
-    private String objeto;
+    private String nome;
     private double preco;
     private int quantidade;
 
-    public Produto(String objeto, double preco, int quantidade) {
-        this.objeto = objeto;
+    public Produto(String nome, double preco, int quantidade) {
+        this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
     }
 
-    public String getObjeto() {
-        return objeto;
+    public String getNome() {
+        return nome;
     }
 
     public double getPreco() {
@@ -26,11 +26,13 @@ public class Produto {
     public void diminuirEstoque(int quantidade) {
         if (this.quantidade >= quantidade) {
             this.quantidade -= quantidade;
+        } else {
+            System.out.println("Estoque insuficiente para o produto " + nome);
         }
     }
 
     @Override
     public String toString() {
-        return "Produto:" + "nome='" + objeto + '\'' + ", preco=" + preco + ", quantidade=" + quantidade + '}';
+        return "Produto:" + "nome='" + nome + '\'' + ", preco=" + preco + ", quantidade=" + quantidade + '}';
     }
 }
