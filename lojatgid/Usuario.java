@@ -5,6 +5,7 @@ public class Usuario {
     private String cpf;
     private String email;
     private String endereco;
+    
 
     public Usuario(String nome, String cpf, String email) {
         this.nome = nome;
