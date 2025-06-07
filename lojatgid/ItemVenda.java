@@ -1,11 +1,10 @@
 package lojatgid;
-
 public class ItemVenda extends Produto {
     private int quantidadeVendida;
 
-    public ItemVenda(String objeto, double preco, int quantidadeEstoque, int quantidadeVendida) {
-        // aciona o construtor da classe Produto // 
-        super(objeto, preco, quantidadeEstoque);
+    public ItemVenda(String nome, double preco, int quantidadeEstoque, int quantidadeVendida) {
+        // acionar o construtor da classe Produto
+        super(nome, preco, quantidadeEstoque);
         this.quantidadeVendida = quantidadeVendida;
     }
 
@@ -17,11 +16,11 @@ public class ItemVenda extends Produto {
         this.quantidadeVendida = quantidadeVendida;
     }
 
+    
     @Override
     public void diminuirEstoque(int quantidade) {
-        // pode ser verificado a quantidade de produto //
         if (super.getQuantidade() >= quantidade) {
-            super.diminuirEstoque(quantidade);
+            super.diminuirEstoque(quantidade);  
         }
     }
 
@@ -29,12 +28,12 @@ public class ItemVenda extends Produto {
     public double getTotal() {
         return getPreco() * quantidadeVendida;
     }
-       // calcula o total do item em relação ao preço e quantidade //
+
     @Override
     public String toString() {
         return "ItemVenda{" +
-                "produto=" + getObjeto() + 
-                ", quantidadeVendida=" + quantidadeVendida + 
-                ", total=" + getTotal() + '}';
+               "produto=" + getNome() +  
+               ", quantidadeVendida=" + quantidadeVendida + 
+               ", total=" + getTotal() + '}';
     }
 }
