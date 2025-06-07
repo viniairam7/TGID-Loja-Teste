@@ -36,3 +36,5 @@ public class Produto {
         return "Produto:" + "nome:'" + nome + '\'' + ", preco R$" + precoRS + ", quantidade=" + quantidade + '}';
     }
 }
+
+
