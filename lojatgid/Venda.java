@@ -37,6 +37,6 @@ public class Venda {
 
     @Override
     public String toString() {
-        return "Venda{" + "usuario=" + usuario + ", itensVenda=" + itensVenda + ", total=" + total + '}';
+        return "Venda:" + "usuario:" + usuario + ", itensVenda:" + itensVenda + ", total:" + total + '}';
     }
 }
